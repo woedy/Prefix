@@ -1,0 +1,11 @@
+# inside your venv
+pip install requests openpyxl
+
+# Check-only (no download/parse)
+python nanpa_updater.py --check-only
+
+# Full update (scrape, download, extract, parse, save)
+python nanpa_updater.py
+
+# Reprocess existing ZIPs (skip fetch)
+python nanpa_updater.py --no-fetch
